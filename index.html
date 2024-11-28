@@ -3,12 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Haarit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
 
-    
-    Hello How are You All
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I am <span>Kevin </span> from australia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex omnis fugit pariatur molestiae sed ut consectetur obcaecati voluptates, voluptatibus illo! Sunt ipsam labore iste repellendus omnis sapiente, libero voluptatibus veniam.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
+                            <li><span>Web Development</span> <br> Designer Web/App interfaces</li>
+                            <li><span>App Development</span> <br> Designer Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
+                            <li><span> Development</span> <br> Designer Web/App interfaces</li>
+                            <li><span>App Development</span> <br> Designer Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
+                            <li><span>Web Dafdevelopment</span> <br> Designer Web/App interfaces</li>
+                            <li><span>App Ddfadfaevelopment</span> <br> Designer Web/App interfaces</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class = "sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consecte
+
+                        </p>
+                        <!-- <a href="#">github.com</a>
+                        <a href="#">icon to link</a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet cons
+
+                        </p>
+                        <!-- <a href="#">github.com</a>
+                        <a href="#">icon to link</a> -->
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet cons
+
+                        </p>
+                        <!-- <a href="#">github.com</a>
+                        <a href="#">icon to link</a> -->
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
