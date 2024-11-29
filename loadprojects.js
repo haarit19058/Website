@@ -1,59 +1,65 @@
 const servicesData = {
     title: "My Projects",
     services: [
+        // {
+        //     name: "LeetCode + Codeforces + CodeChef",
+        //     description:
+        //         "This is a personal project where i will implrmnt all the data structures and basic operations in c. The work is under progress and many more algos and data structures will be incorporated in the github repo",
+        //     link: "#"
+        // },
         {
             name: "Collaborative Code Editor",
             description:
-                "Technology Used: reactjs,mongodb,sockets. This projects aims at cloning the functionality like google docs but in a code editor as well as normal doc editor. It gives real time sync for multiple users allowing to collaborate and write code simultaneously",
-            link: "#"
+                "Technology Stack: ReactJS, MongoDB, WebSockets. This project replicates the core functionality of Google Docs but extends it to include both a code editor and a standard document editor. It enables real-time synchronization, allowing multiple users to collaborate seamlessly and edit code or documents simultaneously.",
+            link: "https://github.com/haarit19058/CollaborativeEditorFinal.git"
         },
         {
             name: "Spotify Clone (CSS+HTML)",
             description:
-                "Technology Used: reactjs,mongodb,sockets. This projects aims at cloning the functionality like google docs but in a code editor as well as normal doc editor. It gives real time sync for multiple users allowing to collaborate and write code simultaneously",
-            link: "#"
+                "Replicated the looks of spotify official website using plain CSS and HTML. ",
+            link: "https://github.com/haarit19058/webdev.git"
         },
         {
             name: "WanderLust",
             description:
-                "Technology Used: reactjs,mongodb,sockets. This projects aims at cloning the functionality like google docs but in a code editor as well as normal doc editor. It gives real time sync for multiple users allowing to collaborate and write code simultaneously",
-            link: "#"
+                "A website clone that has the core functionality like airbnb to view all the available hotels and resorts. The core idea is to use MongoDB and ejs templates.",
+            link: "https://github.com/haarit19058/webdev.git"
         },
         {
             name: "Data Structures in C",
             description:
-                "This is a personal project where i will implrmnt all the data structures and basic operations in c. The work is under progress and many more algos and data structures will be incorporated in the github repo",
-            link: "#"
+                "This is a personal project where I aim to implement various data structures and their basic operations in C. The work is ongoing, with plans to add many more algorithms and data structures to the GitHub repository over time.",
+            link: "https://github.com/haarit19058/DSAinC.git"
         },
         {
             name: "JANUS",
             description:
-                "This project was done under the guidance of prof. Anirban Mondal at IITGN. The task was to use the JANUS library for inverse molecular desing and obtaining molecules with required properties. Filtering the data and customizing the JANUS was the major task",
-            link: "#"
+                "The project involved using the JANUS library for inverse molecular design to generate molecules with desired properties. The primary focus was on filtering the data and customizing fitness functino for JANUS to meet specific requirements. The goal is to create a fitness function that works faster while still checking the needed molecular properties accurately.",
+            link: "https://github.com/haarit19058/janus-final.git"
         },
         {
             name: "Human Activity Recognition",
             description:
-            "This was a group project and the aim was to classify the activity based on the accelerometer data provided. We implemented teh decision tree from scratch and compared its performance with sklearn prebuilts. WE also did data analysis",
-            link:"#"
+            "This is a group project for ES335, where we classify activities like sitting and walking using both a custom-implemented decision tree and one from sklearn. We also analyzed time series data using t-SNE and explored prompt engineering for one-shot and zero-shot learning.",
+            link:"https://github.com/haarit19058/MachineLearning.git"
         },
         {
-            name: "Image Compression",
+            name: "Image Reconstruction, scaling and compression",
             description:
-            "This was a group project and the aim was to classify the activity based on the accelerometer data provided. We implemented teh decision tree from scratch and compared its performance with sklearn prebuilts. WE also did data analysis",
-            link:"#"
+            "In this project of ES335, we performed various methods of image reconstruction using polynomial and random fourier features. This task also included scaling and compression of the image",
+            link:"https://github.com/haarit19058/MachineLearning.git"
         },
         {
-            name: "Image CLassification",
+            name: "Object Detection",
             description:
-            "This was a group project and the aim was to classify the activity based on the accelerometer data provided. We implemented teh decision tree from scratch and compared its performance with sklearn prebuilts. WE also did data analysis",
-            link:"#"
+            "THis is also a part of project in ES335 where we used the VGG model and linear MLPs for object detection between two classes: airplanes and helicopters. Additionally, we implemented KNN and approximate methods such as KD Trees and LSH with random projection.",
+            link:"https://github.com/haarit19058/MachineLearning.git"
         },
         {
             name: "Next Word Predictor",
             description:
-            "This was a group project and the aim was to classify the activity based on the accelerometer data provided. We implemented teh decision tree from scratch and compared its performance with sklearn prebuilts. WE also did data analysis",
-            link:"#"
+            "As part of ES335, we used MLPs for next-character prediction and extended the approach to next-word prediction on the War and Peace text dataset. We also applied MLPs for predictions on the MNIST and FMNIST datasets and used t-SNE to visualize patterns in the data.",
+            link:"https://github.com/haarit19058/MachineLearning.git"
         },
     ]
 };
@@ -71,10 +77,15 @@ servicesData.services.forEach(service => {
 
     const serviceDescription = document.createElement("p");
     serviceDescription.textContent = service.description;
+    serviceDescription.style.fontSize = "15px";
 
     const serviceLink = document.createElement("a");
     serviceLink.href = service.link;
-    serviceLink.textContent = "Learn More";
+    serviceLink.textContent = "Explore..";
+    serviceLink.style.fontSize = "15px";
+    serviceLink.style.fontWeight = 300;
+    serviceLink.style.textDecoration = "underline";
+    serviceLink.style.color = "white";
 
     serviceDiv.appendChild(serviceTitle);
     serviceDiv.appendChild(serviceDescription);

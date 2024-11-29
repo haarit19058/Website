@@ -1,10 +1,11 @@
+var currentYear = new Date().getFullYear();
+
 const aboutData = {
-    profileImage: "images/user.png",
+    profileImage: "images/user.jpg",
+    // profileImage: "images/user.jpg",
     aboutTitle: "About Me",
     aboutText: `
-        Hello !!  I am Haarit Chavda a 20 year old enthusiast. I am interested in all the domains of computer science but have special interests for 
-        crafting algorithms, machine learning and cyber sequirity. In this portfolio website i will be displaying some of my projects and works. I hope that 
-        you will enjoy the work and feel free to leave any message at the end of the portfolio website.
+        Hello !!  I am Haarit Chavda, a ${currentYear-2005} year-old enthusiast. I am interested in all computer science domains but have a particular interest in crafting and learning algorithms, machine learning, and cybersecurity/systems. I will display some of my projects and works on this portfolio website. I hope you will enjoy the work, and feel free to leave a message at the end of the portfolio website.
     `,
     tabs: [
         {
@@ -12,24 +13,24 @@ const aboutData = {
             content: [
                 { name: "Python", description: "Pytorch, Pandas, sklearn, numpy and many more" },
                 { name:"Machine Learning", description:"SVMs, NNs, CNNs, LSH, and many more"},
-                { name: "C/C++", description: "Data Structures and Algorithms and text based games"},
-                { name: "Web Dev", description: "MERN Full Stack + bootstrap + tailwindcss + typescript + appscript" },
+                { name: "C/C++", description: "Data Structures and Algorithms, text based games"},
+                { name: "Web Dev", description: "MERN Full Stack + bootstrap + tailwindcss" },
                 { name:"Systems",description:"Bug Bounty + Basic Pen-Testing (HTBs / VulnHub)"}
             ]
         },
         {
             title: "Experience",
             content: [
-                { name: "Technical Officer (EC IITGN)", description: "Build web portal for automated voter-id generation. Automated ID-card generator "},
-                { name: "Project Janus", description: "Creating molecules from SMILES representation using JANUS" },
+                { name: "Technical Officer (EC IITGN)", description: "For term 2023-24"},
+                { name: "Project Janus", description: "Under Guidance of prof.Anirban Mondal in my 3rd Semester"},
             ]
         },
         {
             title: "Education",
             content: [
-                { name: "BTech", description: "pursuing BTech  in CSE at IITGN" },
-                { name: "High School", description: "Gyanmanjari Vidhyapeeth ,Bhavnagar,Gujarat" },
-                { name: "Primary School", description: "FIA, Dhandhuka,Gujarat"}
+                { name: "Engineering - BTech", description: "pursuing BTech  in CSE at IITGN (BTech 27)" },
+                { name: "Sec. & High Sec. Education", description: "Gyanmanjari Vidhyapeeth, Bhavnagar, Gujarat" },
+                { name: "Primary Education", description: "FIA, Dhandhuka,Gujarat"}
                 // { name: "Certifications", description: "Various online and offline courses" }
             ]
         }
@@ -43,6 +44,7 @@ const tabTitles = document.getElementById("tabTitles");
 const tabContents = document.getElementById("tabContents");
 
 profileImage.src = aboutData.profileImage;
+profileImage.style.height = "800px";
 aboutTitle.textContent = aboutData.aboutTitle;
 aboutText.textContent = aboutData.aboutText;
 
