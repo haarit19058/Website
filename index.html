@@ -40,109 +40,39 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" >
+                    <img id="profileImage" alt="Profile Image">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex omnis fugit pariatur molestiae sed ut consectetur obcaecati voluptates, voluptatibus illo! Sunt ipsam labore iste repellendus omnis sapiente, libero voluptatibus veniam.
-                    </p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
-                            <li><span>Web Development</span> <br> Designer Web/App interfaces</li>
-                            <li><span>App Development</span> <br> Designer Web/App interfaces</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
-                            <li><span> Development</span> <br> Designer Web/App interfaces</li>
-                            <li><span>App Development</span> <br> Designer Web/App interfaces</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>UI/UX</span> <br> Designer Web/App interfaces</li>
-                            <li><span>Web Dafdevelopment</span> <br> Designer Web/App interfaces</li>
-                            <li><span>App Ddfadfaevelopment</span> <br> Designer Web/App interfaces</li>
-                        </ul>
-                    </div>
-
+                    <h1 class="sub-title" id="aboutTitle"></h1>
+                    <p id="abouttext"></p>
+                    <div class="tab-titles" id="tabTitles"></div>
+                    <div id="tabContents"></div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- services -->
 
     <div id="services">
         <div class="container">
-            <h1 class = "sub-title">My services</h1>
-            <div class="services-list">
-                <div>
-                    <!-- <i class="fa-solid fa-code"></i> -->
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
-                    <a href="#">learn more</a>
-                </div>
-            </div>
+            <h1 class="sub-title" id="servicesTitle"></h1>
+            <div class="services-list" id="servicesList"></div>
         </div>
-    </div>
+    </div>    
 
     <!-- portfolio -->
 
 
-    <div id="portfolio">
+    <!-- <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="Work 1">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consecte</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="Work 2">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet cons</p>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="Work 3">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet cons</p>
-                    </div>
-                </div>
-            </div>                
-
-            <a href="#" class="btn">See more</a>
+            <h1 class="sub-title" id="portfolioTitle"></h1>
+            <div class="work-list" id="workList"></div>
+            <!-- <a href="#" class="btn" id="seeMoreLink">See more</a> -->
         </div>
-    </div>
+    </div> -->
+    
 
     <div class="contact" id="contact">
         <div class="container">
@@ -150,7 +80,6 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <h3>Email: haarit1905@gmail.com  <i class="fa-regular fa-paper-plane"></i></h3>
-                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
                     <br>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -159,6 +88,7 @@
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
                     </div>
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet" id="submit-to-google-sheet">
@@ -172,13 +102,22 @@
         </div>
 
         <div class="copyright">
-            <p>Copyright</p>
-            <p>heart icon</p>
+            <p>
+                Thank you for taking the time to explore my website! <br>
+                Your visit truly means a lot to me. <br>
+                If you have any thoughts, feedback, or simply wish to say hello, please feel free to leave a message. <br>
+                I’ll make sure to respond as soon as possible!
+            </p>
         </div>
+        
     </div>
 
 
 
     <script src="./script.js"></script>
+    <script src="./loadabout.js"></script>
+    <!-- <script src="./loadservices.js"></script> -->
+    <script src="./loadportfolio.js"></script>
+    <script src="loadprojects.js"></script>
 </body>
 </html>
