@@ -531,6 +531,11 @@ nav .fa{
 }
 
 @media only screen and (max-width: 600px) {
+
+    #profileImage{
+        height: 400px;
+    }
+
     .header-text h1:nth-child(2) {
         margin-left: 0; /* Equivalent to &ensp;&ensp; */
         }

@@ -44,7 +44,7 @@ const tabTitles = document.getElementById("tabTitles");
 const tabContents = document.getElementById("tabContents");
 
 profileImage.src = aboutData.profileImage;
-profileImage.style.height = "800px";
+// profileImage.style.height = "800px";
 aboutTitle.textContent = aboutData.aboutTitle;
 aboutText.textContent = aboutData.aboutText;
 
