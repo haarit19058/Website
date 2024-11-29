@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haarit</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c15f37e196.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i onclick="closemenu()" class="fa fa-xmark"></i>
                 </ul>
+                <i onclick="openmenu()" class="fa fa-bars"></i>
             </nav>
 
 
@@ -83,7 +86,7 @@
             <h1 class = "sub-title">My services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
+                    <!-- <i class="fa-solid fa-code"></i> -->
                     <h2>Web Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid sapiente minima dolorem fuga reprehenderit quo unde blanditiis nobis sed, velit perferendis doloremque at, soluta cumque tempore! Magnam, repudiandae rem?</p>
                     <a href="#">learn more</a>
@@ -108,73 +111,69 @@
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
+            
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/work-1.png" alt="Work 1">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consecte
-
-                        </p>
-                        <!-- <a href="#">github.com</a>
-                        <a href="#">icon to link</a> -->
+                        <p>Lorem ipsum dolor sit amet consecte</p>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/work-2.png" alt="Work 2">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet cons
-
-                        </p>
-                        <!-- <a href="#">github.com</a>
-                        <a href="#">icon to link</a> -->
+                        <p>Lorem ipsum dolor sit amet cons</p>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/work-3.png" alt="Work 3">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet cons
-
-                        </p>
-                        <!-- <a href="#">github.com</a>
-                        <a href="#">icon to link</a> -->
+                        <p>Lorem ipsum dolor sit amet cons</p>
+                    </div>
                 </div>
-            </div>
+            </div>                
 
             <a href="#" class="btn">See more</a>
         </div>
-        <div class="contact">
-            <div class="container">
-                 <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p>haarit1905@gmail.com</p>
-                        <p>9978272882</p>
-                        <div class="social-icons">
-                            <a href="">facebook icon</a>
-                            <a href="">instagram icon</a>
-                            <a href="">linkedin icon</a>
-                            <a href="">twitter icon</a>
-                            <a href="">github</a>
-                        </div>
-                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>haarit1905@gmail.com</p>
+                    <p>9978272882</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
                     </div>
-                    <div class="contact-right"></div>
-                 </div>
-            </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+             </div>
         </div>
 
-        <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <div class="copyright">
+            <p>Copyright</p>
+            <p>heart icon</p>
+        </div>
     </div>
+
+
 
     <script src="./script.js"></script>
 </body>
