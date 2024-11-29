@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -7,6 +8,10 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
+/* p{
+    font-weight: 400;
+    font-size: 14px;
+} */
 
 html{
     scroll-behavior: smooth;
@@ -15,13 +20,13 @@ html{
 body{
     background: #080808;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url("./images/background.png");
+    background-image: url("./images/freepik_background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -35,6 +40,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* justify-content: center; */
+    justify-items: center;
     flex-wrap: wrap;
     position: fixed; /* Keeps the nav at the top, even on scroll */
     background-color: #080808;
@@ -44,6 +51,97 @@ nav {
     z-index: 1000; /* Ensures it appears above all other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
+
+
+
+
+ #header .container .logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header .container nav h2{
+    color: #ff004f;
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: "Comic Nueue";
+    display: inline;
+}
+
+#header .container span  a{
+    display: inline;
+    margin: 0;
+    margin-left: 20px;
+    font-size: small;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    top: 0;
+}
+
+
+.header-text h1:nth-child(2) {
+margin-left: 10%; /* Equivalent to &ensp;&ensp; */
+}
+
+.header-text h1:nth-child(3) {
+margin-left: 20%; /* Equivalent to &ensp;&ensp;&ensp; */
+}
+
+.header-text h1:nth-child(4) {
+    margin-left: 30%; /* Equivalent to &ensp;&ensp;&ensp; */
+}
+
+
+.rainbow-text {
+    background: linear-gradient(90deg, #ff004f, #ff6600, #00ff88, #007fff, #ff004f);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 8s ease infinite;
+}
+
+
+@keyframes rainbow-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.india{
+    background: linear-gradient(45deg, #ff8000, #ffffff, #15ff00); 
+    /* text-align: center; */
+    /* background-size: 800% 800%; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.waving-hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    30% { transform: rotate(-8.0deg) }
+    40% { transform: rotate(14.0deg) }
+    50% { transform: rotate(-4.0deg) }
+    60% { transform: rotate(10.0deg) }
+    70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   100% { transform: rotate( 0.0deg) }
+  }
 
 
 .logo{
@@ -85,7 +183,7 @@ nav ul li a:hover::after{
 
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .header-text h1 span{
@@ -322,19 +420,23 @@ nav ul li a:hover::after{
 .btn{
     display: block;
     margin: 50px auto;
+    font-weight: 500;
     width: fit-content;
     border: 1px solid #ff004f;
+    background-color: #080808;
     padding: 14px 50px;
     border-radius: 14px;
     text-decoration: none;
     color: #fff;
-    transition: transform 0.5s;
+    transition: transform 1s, box-shadow 0.3s ease;
 }
 
 .btn:hover{
     background: #ff004f;
-
+    color: #000000;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 79, 0.7); /* Adjust the shadow's size, spread, and color */
 }
+
 
 
 /* contact */
@@ -425,11 +527,27 @@ form textarea{
 /* css for resposnsiveness dafjldjsflakjdf;joiajorrkf */
 nav .fa{
     display: none;
+    padding-right: 15px;
 }
 
 @media only screen and (max-width: 600px) {
+    .header-text h1:nth-child(2) {
+        margin-left: 0; /* Equivalent to &ensp;&ensp; */
+        }
+        
+        .header-text h1:nth-child(3) {
+        margin-left: 0; /* Equivalent to &ensp;&ensp;&ensp; */
+        }
+        
+        .header-text h1:nth-child(4) {
+            margin-left: 0; /* Equivalent to &ensp;&ensp;&ensp; */
+        }
+    body{
+        padding-top: 0px;
+    }
+
     #header{
-        background-image: url("images/phone-background.png");
+        background-image: url("./images/backgroundshort.jpg");
     }
     .header-text{
         margin-top: 100%;
@@ -443,16 +561,36 @@ nav .fa{
         display: block;
         font-size: 25px;
     }
-    nav ul{
-        background:#ff004f;
+    nav ul {
+        background: rgba(0, 0, 0); /* Semi-transparent background */
         position: fixed;
-        top: 0;
-        right: -200px;
+        top: 10px; /* Adjust to leave space around the nav */
+        right: -220px; /* Adjusted for smoother animation if needed */
         width: 200px;
-        height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        border-radius: 20px; /* Circular corners */
+        border: 1px solid #ff004f;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+        transition: all 0.3s ease-in-out; /* Smooth transition for animations */
     }
+    
+    /* Optional hover effect for menu */
+    nav ul:hover {
+        right: 0; /* Slide in smoothly when hovered */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Emphasize the shadow on hover */
+    }
+    
+    /* Style individual list items */
+    nav ul li {
+        display: block;
+        margin: 20px;
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    
 
     nav ul li{
         display: block;
@@ -466,10 +604,21 @@ nav .fa{
         cursor: pointer;
     }
 
-    .sub-title{
-        font-size: 40px;
+    .work-list{
+        margin: 0;
     }
 
+    .sub-title{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    #about .container .row{
+        justify-content: center;
+    }
+    #about .container{
+        padding: 0;
+        margin: 0;
+    }
     .about-col-1,.about-col-2{
         flex-basis: 100%;
     }
@@ -494,4 +643,37 @@ nav .fa{
     .copyright{
         font-size: 14px;
     }
+}
+
+/* Media Query for Medium Screens (601px to 900px) */
+@media only screen and (max-width: 900px) {
+    .header-text {
+        margin-top: 20%;
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 48%;
+    }
+
+    .sub-title {
+        font-size: 48px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+}
+
+/* Smooth transitions for opening and closing the menu */
+nav ul.open {
+    right: 0;
+}
+
+nav ul.closed {
+    right: -250px;
 }
